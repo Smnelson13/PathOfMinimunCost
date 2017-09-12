@@ -42,15 +42,24 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaN-Wu-cQg">
                                 <rect key="frame" x="164" y="159.5" width="64" height="30"/>
                                 <state key="normal" title="Sample 2"/>
+                                <connections>
+                                    <action selector="loadSampeset2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VdK-f0-OMd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8t-bD-zc8">
                                 <rect key="frame" x="25" y="158" width="90" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Sample 1"/>
+                                <connections>
+                                    <action selector="loadSampleset1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kf4-rG-Dby"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUY-21-RVw">
                                 <rect key="frame" x="278" y="159" width="72" height="30"/>
                                 <state key="normal" title="Sample 3"/>
+                                <connections>
+                                    <action selector="loadSampleset3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bgi-8B-qtY"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYx-Fc-4xh">
                                 <rect key="frame" x="12" y="208" width="351" height="207"/>
@@ -136,6 +145,13 @@
                             <constraint firstItem="HGu-sP-iiF" firstAttribute="top" secondItem="wmO-dO-SoB" secondAttribute="bottom" constant="31" id="yc9-81-jic"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputArea" destination="HYx-Fc-4xh" id="PCI-su-HGB"/>
+                        <outlet property="lowestCostLabel" destination="7ZG-Ct-GL4" id="N4k-ZT-D5R"/>
+                        <outlet property="lowestCostPath" destination="8qO-bf-DKU" id="J4R-Jg-068"/>
+                        <outlet property="pathExists" destination="HGu-sP-iiF" id="FIy-zP-W07"/>
+                        <outlet property="pathExistsLabel" destination="HGu-sP-iiF" id="Ggh-u2-Ujn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
