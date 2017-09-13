@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController
+class ViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate
 {
   
   @IBOutlet weak var pathExists: UILabel!
@@ -35,7 +35,7 @@ class ViewController: UIViewController
     self.view.endEditing(true)
   }
   
-  
+  // Sample sets
   @IBAction func loadSampleset1(_ sender: Any)
   {
     inputArea.text = inputCost
@@ -51,7 +51,26 @@ class ViewController: UIViewController
     inputArea.text = inputCost3
   }
 
-
+  // submit button tapped
+  @IBAction func submit(_ sender: Any)
+  {
+    resetOutputLabels()
+    
+  }
+  
+  // Resets the UI
+  func resetOutputLabels()
+  {
+    lowestCostLabel.text = "Lowest Cost"
+    pathExists.text = "Path Exists"
+    lowestCostPath.text = "Path"
+  }
+  
+  // TextView delegate setup 
+  func textViewDidBeginEditing(_ textView: UITextView)
+  {
+    resetOutputLabels()
+  }
 
 
 }
