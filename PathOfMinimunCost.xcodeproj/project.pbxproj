@@ -15,6 +15,7 @@
 		900C7A691F5C5D020039EC63 /* PathOfMinimunCostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C7A681F5C5D020039EC63 /* PathOfMinimunCostTests.swift */; };
 		900C7A741F5C5D020039EC63 /* PathOfMinimunCostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C7A731F5C5D020039EC63 /* PathOfMinimunCostUITests.swift */; };
 		900C7A821F689EF10039EC63 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C7A811F689EF10039EC63 /* Constants.swift */; };
+		900C7A841F69E1C40039EC63 /* MatrixUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C7A831F69E1C40039EC63 /* MatrixUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		900C7A731F5C5D020039EC63 /* PathOfMinimunCostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathOfMinimunCostUITests.swift; sourceTree = "<group>"; };
 		900C7A751F5C5D020039EC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		900C7A811F689EF10039EC63 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		900C7A831F69E1C40039EC63 /* MatrixUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				900C7A551F5C5D020039EC63 /* ViewController.swift */,
 				900C7A811F689EF10039EC63 /* Constants.swift */,
 				900C7A571F5C5D020039EC63 /* Main.storyboard */,
+				900C7A831F69E1C40039EC63 /* MatrixUtilities.swift */,
 				900C7A5A1F5C5D020039EC63 /* Assets.xcassets */,
 				900C7A5C1F5C5D020039EC63 /* LaunchScreen.storyboard */,
 				900C7A5F1F5C5D020039EC63 /* Info.plist */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				900C7A561F5C5D020039EC63 /* ViewController.swift in Sources */,
+				900C7A841F69E1C40039EC63 /* MatrixUtilities.swift in Sources */,
 				900C7A541F5C5D020039EC63 /* AppDelegate.swift in Sources */,
 				900C7A821F689EF10039EC63 /* Constants.swift in Sources */,
 			);

@@ -56,6 +56,8 @@ class ViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate
   {
     resetOutputLabels()
     
+    
+    
   }
   
   // Resets the UI
