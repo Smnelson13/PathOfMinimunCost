@@ -56,6 +56,15 @@ class ViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate
   {
     resetOutputLabels()
     
+    let inputValidationResults = MatrixUtilities.parse(inputString: inputArea.text, delimitedBy: ("\n", ""))
+    
+    if(!inputValidationResults.success) {
+      let alert = UIAlertController(title: "Error", message: inputValidationResults.error, preferredStyle: .alert)
+      let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+      alert.addAction(okAction)
+      self.show(alert, sender: nil)
+      return
+    }
     
     
   }
