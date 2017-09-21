@@ -56,16 +56,29 @@ class ViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate
   {
     resetOutputLabels()
     
-    let inputValidationResults = MatrixUtilities.parse(inputString: inputArea.text, delimitedBy: ("\n", ""))
+    let inputValidationResult = MatrixUtilities.parse(inputString: inputArea.text, delimitedBy: ("\n", " "))
     
-    if(!inputValidationResults.success) {
-      let alert = UIAlertController(title: "Error", message: inputValidationResults.error, preferredStyle: .alert)
+    if(!inputValidationResult.success) {
+      let alert = UIAlertController(title: "Error", message: inputValidationResult.error, preferredStyle: .alert)
       let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
       alert.addAction(okAction)
       self.show(alert, sender: nil)
       return
     }
+   
+    let matrix = Matrix(inputCostValues: inputValidationResult.costMatrix!)
+    let matrixHandler  = MatrixHandler(with: matrix)
+    let lowestCost = matrixHandler.getlowestCostPathForMatrix()
     
+    lowestCostLabel.text = "Lowest Cost: \(lowestCost.cost)"
+    
+    if(lowestCost.traveseredTillEnd){
+      pathExists.text = "Path Exists : Yes"
+    }else{
+      pathExists.text = "Path Exists : No"
+    }
+    
+    lowestCostPath.text = "Path : \(lowestCost.route)"
     
   }
   
