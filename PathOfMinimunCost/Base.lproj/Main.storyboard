@@ -153,7 +153,6 @@
                         <outlet property="lowestCostLabel" destination="7ZG-Ct-GL4" id="N4k-ZT-D5R"/>
                         <outlet property="lowestCostPath" destination="8qO-bf-DKU" id="J4R-Jg-068"/>
                         <outlet property="pathExists" destination="HGu-sP-iiF" id="FIy-zP-W07"/>
-                        <outlet property="pathExistsLabel" destination="HGu-sP-iiF" id="Ggh-u2-Ujn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
